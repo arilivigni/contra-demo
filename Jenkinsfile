@@ -1,4 +1,4 @@
-def containers = ['fedora': [command: 'cat', tag: 'latest']]
+def containers = ['fedora': [privileged: 'false', tag: 'latest']]
 def podName = "mytestpod"
 deployOpenShiftTemplate(openshift_namespace: 'contra-env-infra', jenkins_slave_image: 'jenkins-contra-slave:latest',
                         containersWithProps: containers, podName: podName, openshift_service_account: 'jenkins') {
