@@ -1,0 +1,23 @@
+# Created by .ignore support plugin (hsz.mobi)
+*.egg-info
+*.eggs
+*.log
+*.pyc
+*.retry
+.cache
+.idea/
+.profiles
+.tox/
+.tox_*
+.venv
+.workspaces
+/.eggs
+/AUTHORS
+/ChangeLog
+/ansible.cfg
+/build
+/dist
+# IntelliJ project files
+*.iml
+out
+gen
