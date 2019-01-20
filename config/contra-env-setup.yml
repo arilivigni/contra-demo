@@ -1,4 +1,4 @@
-
+# Initial setup variables for contra-env-setup
 run_cleanup: true
 run_prereqs: false
 setup_containers: true
@@ -7,11 +7,10 @@ setup_sample_project: false
 force_repo_clone: true
 modify_scc: false
 
-
+## Minishift specific variables
 # Set to false if deploying to an Enterprise Cluster
 setup_minishift: true
 profile: minishift
-
 # default minishift version to install
 minishift_version: "v1.26.0"
 
@@ -22,7 +21,6 @@ oc_version: "v3.11.0"
 username: "developer"
 # OpenShift password. update if deploying to an Enterprise Cluster
 password: "developer"
-
 
 # don't install helper containers ansible-executor and linchpin-executor
 os_template_blacklist:
