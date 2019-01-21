@@ -10,7 +10,7 @@ deployOpenShiftTemplate(docker_repo_url: '172.30.1.1:5000', openshift_namespace:
             mkdir logs
             /bin/metrics.sh > logs/metrics.log &
             echo testing...
-            stress --cpu 1 --timeout 30
+            stress --cpu 1 --timeout 90
             """ 
             executeInContainer(containerName: 'fedora', containerScript: cmd)
 
